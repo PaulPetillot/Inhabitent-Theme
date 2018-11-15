@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../../fonts/Merriweather-Light.woff2') format('woff2'),
+        url('../../fonts/Merriweather-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Novecento';
+    src: url('../../fonts/Novecento-Demi-Bold.woff2') format('woff2'),
+        url('../../fonts/Novecento-Demi-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Novecento';
+    src:url('../../fonts/Novecento-Normal.woff2') format('woff2'),
+        url('../../fonts/Novecento-Normal.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../../fonts/Merriweather-LightItalic.woff2') format('woff2'),
+        url('../../fonts/Merriweather-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../../fonts/Merriweather-BoldItalic.woff2') format('woff2'),
+        url('../../fonts/Merriweather-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../../fonts/Merriweather-Bold.woff2') format('woff2'),
+        url('../../fonts/Merriweather-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
