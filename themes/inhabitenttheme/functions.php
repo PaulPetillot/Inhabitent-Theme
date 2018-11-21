@@ -111,3 +111,69 @@ function inhabitent_remove_submenus() {
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
+// include custom jQuery
+function include_jquery_script()
+{
+
+   wp_deregister_script('jquery');
+   wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+
+}
+add_action('wp_enqueue_scripts', 'include_jquery_script');
+
+/**
+* Adding js file for header
+*/
+function header_script()
+{
+   $id = get_the_ID();
+   $class = get_post_class('home');
+   if ($id == 11 || $class) {
+       wp_enqueue_script('header-handler', get_template_directory_uri() . '/build/js/header-handler.min.js', array(), '20151215', true);
+   }
+}
+add_action('wp_enqueue_scripts', 'header_script');
+
+/**
+ * Register widget area for footer.
+ */
+function tutsplus_widgets_init() {
+ 
+    // First footer widget area, located in the footer. Empty by default.
+  register_sidebar( array(
+        'name' => __( 'First Footer Widget Area', 'tutsplus' ),
+        'id' => 'first-footer-widget-area',
+        'description' => __( 'The first footer widget area', 'tutsplus' ),
+        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+ 
+    // Second Footer Widget Area, located in the footer. Empty by default.
+    register_sidebar( array(
+        'name' => __( 'Second Footer Widget Area', 'tutsplus' ),
+        'id' => 'second-footer-widget-area',
+        'description' => __( 'The second footer widget area', 'tutsplus' ),
+        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+ 
+    // Third Footer Widget Area, located in the footer. Empty by default.
+    register_sidebar( array(
+        'name' => __( 'Third Footer Widget Area', 'tutsplus' ),
+        'id' => 'third-footer-widget-area',
+        'description' => __( 'The third footer widget area', 'tutsplus' ),
+        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+         
+}
+ 
+// Register sidebars by running tutsplus_widgets_init() on the widgets_init hook.
+add_action( 'widgets_init', 'tutsplus_widgets_init' );

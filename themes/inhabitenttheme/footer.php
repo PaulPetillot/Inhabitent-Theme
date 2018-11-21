@@ -1,23 +1,29 @@
 <?php
 /**
- * The template for displaying the footer.
- *
- * @package RED_Starter_Theme
- */
+* The template for displaying the footer.
+*
+* @package RED_Starter_Theme
+*/
 
 ?>
 
-			</div><!-- #content -->
+            </div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-			 <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="the logo of the website">
-			 <p class="copyright">COPYRIGHT © 2019 INHABITENT</p>
-				</div><!-- .site-info -->
-			</footer><!-- #colophon -->
-		</div><!-- #page -->
+            <footer id="colophon" class="site-footer" role="contentinfo">
+                <div class="content">
+                    <?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
+                    <?php dynamic_sidebar( 'second-footer-widget-area' ); ?>
+                    <?php dynamic_sidebar( 'third-footer-widget-area' ); ?>
+                </div>
 
-		<?php wp_footer(); ?>
+                <div class="site-info">
+                    <div class="container-copyright">COPYRIGHT © <?php echo date('Y');?> INHABITENT</div>
+                </div><!-- .site-info -->
 
-	</body>
+            </footer><!-- #colophon -->
+        </div><!-- #page -->
+
+        <?php wp_footer(); ?>
+
+    </body>
 </html>

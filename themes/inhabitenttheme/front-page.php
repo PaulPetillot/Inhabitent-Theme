@@ -25,15 +25,26 @@ get_header(); ?>
 			) );
 		?>
 	</div><!-- .entry-content -->
-
+	<section class="shop-section" >
+		<h3>Shop Stuff</h3>
+		<div class="product-taxonomy-section">
+			<?php foreach (get_terms(array("taxonomy" => "product-type")) as $product_type): ?>
+                    <div class="product-type">
+                    	<img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/<?php echo $product_type->slug ?>.svg">
+                            <p><?php echo $product_type->description ?></p>
+                        <a href="<?php echo get_term_link($product_type->slug, "product-type"); ?>"><?php echo $product_type->name ?> STUFF</a>
+                    </div>
+            <?php endforeach;?>
+		</div>
+	</section>
 	<section class="section-post">
 	<h3>INHABITENT JOURNAL</h3>
 		<div class='blog-post'>
     <?php
-$args = array('post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => '2');
+$args = array('post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => '3');
 $post = get_posts($args); // returns an array of posts
 ?>
-<?php foreach ($posts as $post): setup_postdata($post);?>
+<?php foreach ($post as $post): setup_postdata($post);?>
                                  <?php /* Content from your array of post results goes here */?>
 								 <div class="journal-article">
 								<div class="content-mark">
