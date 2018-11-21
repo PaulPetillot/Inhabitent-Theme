@@ -16,6 +16,7 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
 #### 3. Update the proxy in `gulpfile.js`
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so |  `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+
 ----
 ## Goals of the site
 This site has been created to learn how to create a theme by using Wordpress.
