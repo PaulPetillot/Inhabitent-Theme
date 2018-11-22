@@ -23,6 +23,18 @@ $(document).ready(function() {
            });
         $('.site-nav').removeClass('site-header');
         $('.site-nav').addClass('site-header-nav');
+}else if(window.location.pathname.includes("adventure/")){
+    var header = $("#masthead");
+    $(document).scroll(function() {    
+        var scroll = $(document).scrollTop();
+        if (scroll > $(window).height()) {
+        header.removeClass('site-header-nav').addClass("site-header");
+        } else {
+        header.removeClass("site-header").addClass('site-header-nav');
+        }
+       });
+    $('.site-nav').removeClass('site-header');
+    $('.site-nav').addClass('site-header-nav');
 }
 
 });

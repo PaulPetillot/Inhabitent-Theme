@@ -2106,7 +2106,8 @@ label {
     font-family: "Merriweather"; }
     .site-footer .widget-container h3 {
       color: #d99054;
-      font-family: "Novecento"; }
+      font-family: "Novecento";
+      margin-bottom: 5px; }
     .site-footer .widget-container ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2118,9 +2119,10 @@ label {
       list-style: none;
       margin-left: 0px;
       padding-left: 0px;
-      height: 120px; }
+      height: 120px;
+      white-space: nowrap; }
       .site-footer .widget-container ul li {
-        margin-top: 10px; }
+        margin-top: 20px; }
       .site-footer .widget-container ul .social-media-icon i {
         margin-right: 10px;
         font-size: 20px; }
@@ -2287,3 +2289,118 @@ label {
       list-style: none;
       margin: 20px;
       margin-left: 0px; }
+
+.single-adventure {
+  width: 100vw; }
+  .single-adventure .entry-content {
+    width: 800px;
+    margin: auto; }
+    .single-adventure .entry-content .social-media-ul {
+      margin-left: -50px;
+      list-style: none;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+      .single-adventure .entry-content .social-media-ul .social-media-li {
+        font-family: "Novecento";
+        font-size: 14px;
+        text-align: center;
+        padding: 8px 20px;
+        width: auto;
+        border: 1px solid black;
+        color: black;
+        list-style: none;
+        margin-left: 10px; }
+        .single-adventure .entry-content .social-media-ul .social-media-li:hover {
+          background-color: #248a83;
+          color: white;
+          border: transparent; }
+      .single-adventure .entry-content .social-media-ul .fb::before {
+        content: "\f09a";
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .single-adventure .entry-content .social-media-ul .twi::before {
+        content: "\f099";
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .single-adventure .entry-content .social-media-ul .pin::before {
+        content: "\f0d2";
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+  .single-adventure .entry-header img {
+    width: 100vw;
+    height: auto; }
+  .single-adventure h1 {
+    font-family: "Novecento";
+    text-align: left; }
+  .single-adventure p {
+    font-family: "Merriweather";
+    text-align: justify; }
+  .single-adventure .entry-meta {
+    font-family: "Novecento";
+    font-size: 25px;
+    margin-top: -30px;
+    margin-bottom: 30px; }
+
+.post-type-archive-adventure {
+  width: 100vw; }
+  .post-type-archive-adventure h1 {
+    font-family: "Novecento";
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 160px;
+    border-bottom: 1px dashed #a1a1a1;
+    width: 920px; }
+  .post-type-archive-adventure .adventure-grid {
+    width: 1120px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 4.5rem;
+    padding: 0 160px; }
+    .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-wrapper {
+      overflow: hidden;
+      position: relative;
+      height: 450px;
+      width: 450px;
+      margin-bottom: -15px; }
+      .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-wrapper img {
+        z-index: 1;
+        max-height: 550px;
+        max-width: none;
+        width: 650px;
+        position: absolute;
+        -webkit-filter: brightness(70%);
+                filter: brightness(70%); }
+    .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info {
+      margin: 1.5rem;
+      position: absolute;
+      z-index: 2; }
+      .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info h3 {
+        font-size: 35px;
+        font-family: "Merriweather";
+        font-weight: 400;
+        margin-top: 24px;
+        text-transform: none; }
+        .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info h3 a {
+          text-decoration: none;
+          color: #fff; }
+          .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info h3 a:hover {
+            color: #f0e4d1; }
+      .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info .link-read {
+        position: relative;
+        bottom: 12px;
+        left: 5px;
+        border: 1px solid white;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: "Novecento";
+        margin-left: -5px; }
+        .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info .link-read:hover {
+          background-color: #248A83;
+          color: white;
+          border: none; }

@@ -64,7 +64,7 @@ wp_reset_postdata();?>
 	</div>
 	</section>
 	<section class="adventures">
-	<h2>LATEST ADVENTURE </h2>
+	<h2>LATEST ADVENTURES </h2>
 	<ul>
 		<?php
             $args = array( 'post_type' => 'adventure', 'order => ASC', 'post_per_page' => '4' );
