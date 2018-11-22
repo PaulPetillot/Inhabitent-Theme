@@ -54,31 +54,38 @@ main {
             text-decoration: none;
         }
     }
-    .search-label{
+
+    .search-label {
         display: inline-flex;
         align-items: center;
-        .fa-search{
+
+        .fa-search {
             color: #248a83;
         }
     }
-    .search-menu{
+
+    .search-menu {
         width: 130px;
         height: 30px;
         margin-top: -20px;
-        fieldset{
-        height: 33px;
-        border : none;
-        input{
-            font-family: $nov;
-            background-color: transparent;
-            border : none;
-            &::placeholder{
-                color: #248a83;
+
+        fieldset {
+            height: 33px;
+            border: none;
+
+            input {
+                font-family: $nov;
+                background-color: transparent;
+                border: none;
+
+                &::placeholder {
+                    color: #248a83;
+                }
             }
-        }
         }
     }
 }
+
 //Nav-bar for the homepage and About page
 .site-header-nav {
     display: flex;
@@ -90,14 +97,16 @@ main {
     padding: .5rem 0;
     transition: top .5s linear;
     z-index: 3;
-    position : absolute;
-    .menu-item{
-    a {
-        color: white;
-        font-family: $nov;
-        margin-right: 5px;
+    position: absolute;
+
+    .menu-item {
+        a {
+            color: white;
+            font-family: $nov;
+            margin-right: 5px;
+        }
     }
-    }
+
     a:hover {
         color: #f0e4d1;
     }
@@ -116,31 +125,38 @@ main {
             text-decoration: none;
         }
     }
-    .search-label{
+
+    .search-label {
         display: inline-flex;
         align-items: center;
-        .fa-search{
+
+        .fa-search {
             color: white;
         }
     }
-    .search-menu{
+
+    .search-menu {
         width: 160px;
         height: 30px;
         margin-top: -20px;
-        fieldset{
-        height: 33px;
-        border : none;
-        input{
-            font-family: $nov;
-            background-color: transparent;
-            border : none;
-            &::placeholder{
-                color: white;
+
+        fieldset {
+            height: 33px;
+            border: none;
+
+            input {
+                font-family: $nov;
+                background-color: transparent;
+                border: none;
+
+                &::placeholder {
+                    color: white;
+                }
             }
-        }
         }
     }
 }
+
 //End of the alternative navbar
 .main-navigation {
     margin-right: 70px;
@@ -202,21 +218,25 @@ main {
 
         a {
             text-decoration: none;
+
             #phone-number::before {
                 content: "\f095";
                 color: black;
                 font-family: "FontAwesome";
                 margin-right: 10px;
             }
+
             #mail::before {
                 content: "\f0e0";
                 color: black;
                 font-family: "FontAwesome";
                 margin-right: 10px;
             }
-            #adress{
-                color:black;
+
+            #adress {
+                color: black;
             }
+
             #adress::before {
                 content: "\f041";
                 color: black;
@@ -469,6 +489,10 @@ label {
         display: block;
         margin-top: 80px;
 
+        h2 {
+            font-family: $nov;
+        }
+
         ul {
             margin: 0;
             padding: 0;
@@ -477,21 +501,25 @@ label {
 
         a {
             text-decoration: none;
+
             #phone-number::before {
                 content: "\f095";
                 color: black;
                 font-family: "FontAwesome";
                 margin-right: 10px;
             }
+
             #mail::before {
                 content: "\f0e0";
                 color: black;
                 font-family: "FontAwesome";
                 margin-right: 10px;
             }
-            #adress{
-                color:black;
+
+            #adress {
+                color: black;
             }
+
             #adress::before {
                 content: "\f041";
                 color: black;
@@ -1106,6 +1134,10 @@ label {
         display: block;
         margin-top: 80px;
 
+        h2 {
+            font-family: $nov;
+        }
+
         ul {
             margin: 0;
             padding: 0;
@@ -1114,21 +1146,25 @@ label {
 
         a {
             text-decoration: none;
+
             #phone-number::before {
                 content: "\f095";
                 color: black;
                 font-family: "FontAwesome";
                 margin-right: 10px;
             }
+
             #mail::before {
                 content: "\f0e0";
                 color: black;
                 font-family: "FontAwesome";
                 margin-right: 10px;
             }
-            #adress{
-                color:black;
+
+            #adress {
+                color: black;
             }
+
             #adress::before {
                 content: "\f041";
                 color: black;
@@ -1146,7 +1182,10 @@ label {
 }
 
 
-.tag,.date,.category,.date {
+.tag,
+.date,
+.category,
+.date {
     .entry-title {
         display: none;
     }
@@ -1157,6 +1196,10 @@ label {
         width: 73%;
         position: relative;
         margin-top: 60px;
+
+        h1 {
+            font-family: $nov;
+        }
 
         .journal-article {
             font-family: $merri;
@@ -1239,6 +1282,10 @@ label {
         display: block;
         margin-top: 80px;
 
+        h2 {
+            font-family: $nov;
+        }
+
         ul {
             margin: 0;
             padding: 0;
@@ -1247,21 +1294,25 @@ label {
 
         a {
             text-decoration: none;
+
             #phone-number::before {
                 content: "\f095";
                 color: black;
                 font-family: "FontAwesome";
                 margin-right: 10px;
             }
+
             #mail::before {
                 content: "\f0e0";
                 color: black;
                 font-family: "FontAwesome";
                 margin-right: 10px;
             }
-            #adress{
-                color:black;
+
+            #adress {
+                color: black;
             }
+
             #adress::before {
                 content: "\f041";
                 color: black;
@@ -1328,12 +1379,14 @@ label {
             a {
                 color: white;
                 text-decoration: none;
+
                 #phone-number::before {
                     content: "\f095";
                     color: white;
                     font-family: "FontAwesome";
                     margin-right: 10px;
                 }
+
                 #mail::before {
                     content: "\f0e0";
                     color: white;
@@ -1455,11 +1508,13 @@ label {
         width: 1120px;
         position: relative;
         z-index: 1;
+
         h1 {
             font-family: $nov;
             overflow: hidden;
             margin-top: -40px;
         }
+
         .link-read {
             position: relative;
             bottom: 12px;
@@ -1529,21 +1584,25 @@ label {
 
             a {
                 text-decoration: none;
+
                 #phone-number::before {
                     content: "\f095";
                     color: black;
                     font-family: "FontAwesome";
                     margin-right: 10px;
                 }
+
                 #mail::before {
                     content: "\f0e0";
                     color: black;
                     font-family: "FontAwesome";
                     margin-right: 10px;
                 }
-                #adress{
-                    color:black;
+
+                #adress {
+                    color: black;
                 }
+
                 #adress::before {
                     content: "\f041";
                     color: black;
@@ -1551,7 +1610,7 @@ label {
                     margin-right: 10px;
                 }
             }
-    
+
             li {
                 list-style: none;
                 margin: 20px;

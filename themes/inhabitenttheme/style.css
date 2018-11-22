@@ -1108,6 +1108,8 @@ label {
     width: 27%;
     display: block;
     margin-top: 80px; }
+    .single-post .widget-area h2 {
+      font-family: "Novecento"; }
     .single-post .widget-area ul {
       margin: 0;
       padding: 0;
@@ -1676,6 +1678,8 @@ label {
   width: 27%;
   display: block;
   margin-top: 80px; }
+  .page-id-106 .widget-area h2 {
+    font-family: "Novecento"; }
   .page-id-106 .widget-area ul {
     margin: 0;
     padding: 0;
@@ -1704,25 +1708,48 @@ label {
     margin: 20px;
     margin-left: 0px; }
 
-.tag .entry-title, .date .entry-title, .category .entry-title, .date .entry-title {
+.tag .entry-title,
+.date .entry-title,
+.category .entry-title,
+.date .entry-title {
   display: none; }
 
-.tag .content-area, .date .content-area, .category .content-area, .date .content-area {
+.tag .content-area,
+.date .content-area,
+.category .content-area,
+.date .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 3%;
   width: 73%;
   position: relative;
   margin-top: 60px; }
-  .tag .content-area .journal-article, .date .content-area .journal-article, .category .content-area .journal-article, .date .content-area .journal-article {
+  .tag .content-area h1,
+  .date .content-area h1,
+  .category .content-area h1,
+  .date .content-area h1 {
+    font-family: "Novecento"; }
+  .tag .content-area .journal-article,
+  .date .content-area .journal-article,
+  .category .content-area .journal-article,
+  .date .content-area .journal-article {
     font-family: "Merriweather";
     margin-bottom: 60px; }
-    .tag .content-area .journal-article .header-article, .date .content-area .journal-article .header-article, .category .content-area .journal-article .header-article, .date .content-area .journal-article .header-article {
+    .tag .content-area .journal-article .header-article,
+    .date .content-area .journal-article .header-article,
+    .category .content-area .journal-article .header-article,
+    .date .content-area .journal-article .header-article {
       line-height: 0;
       position: relative; }
-      .tag .content-area .journal-article .header-article .img, .date .content-area .journal-article .header-article .img, .category .content-area .journal-article .header-article .img, .date .content-area .journal-article .header-article .img {
+      .tag .content-area .journal-article .header-article .img,
+      .date .content-area .journal-article .header-article .img,
+      .category .content-area .journal-article .header-article .img,
+      .date .content-area .journal-article .header-article .img {
         height: auto;
         max-width: 100%; }
-      .tag .content-area .journal-article .header-article h2 a, .date .content-area .journal-article .header-article h2 a, .category .content-area .journal-article .header-article h2 a, .date .content-area .journal-article .header-article h2 a {
+      .tag .content-area .journal-article .header-article h2 a,
+      .date .content-area .journal-article .header-article h2 a,
+      .category .content-area .journal-article .header-article h2 a,
+      .date .content-area .journal-article .header-article h2 a {
         background-color: #248a83;
         color: #fff;
         font-size: 2.1rem;
@@ -1735,7 +1762,10 @@ label {
         margin-top: 2.25rem;
         max-width: 75%;
         top: 0; }
-      .tag .content-area .journal-article .header-article .meta-div, .date .content-area .journal-article .header-article .meta-div, .category .content-area .journal-article .header-article .meta-div, .date .content-area .journal-article .header-article .meta-div {
+      .tag .content-area .journal-article .header-article .meta-div,
+      .date .content-area .journal-article .header-article .meta-div,
+      .category .content-area .journal-article .header-article .meta-div,
+      .date .content-area .journal-article .header-article .meta-div {
         background-color: #248a83;
         bottom: 0;
         color: #fff;
@@ -1747,7 +1777,10 @@ label {
         right: 0;
         text-transform: uppercase;
         overflow: hidden; }
-  .tag .content-area .link-read, .date .content-area .link-read, .category .content-area .link-read, .date .content-area .link-read {
+  .tag .content-area .link-read,
+  .date .content-area .link-read,
+  .category .content-area .link-read,
+  .date .content-area .link-read {
     position: relative;
     bottom: 12px;
     left: 5px;
@@ -1759,12 +1792,18 @@ label {
     font-family: "Novecento";
     margin-left: -5px;
     margin-top: 30px; }
-    .tag .content-area .link-read:hover, .date .content-area .link-read:hover, .category .content-area .link-read:hover, .date .content-area .link-read:hover {
+    .tag .content-area .link-read:hover,
+    .date .content-area .link-read:hover,
+    .category .content-area .link-read:hover,
+    .date .content-area .link-read:hover {
       background-color: #248A83;
       color: white;
       border: none; }
 
-.tag .site-content, .date .site-content, .category .site-content, .date .site-content {
+.tag .site-content,
+.date .site-content,
+.category .site-content,
+.date .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1774,35 +1813,64 @@ label {
   position: relative;
   z-index: 1; }
 
-.tag .widget-area, .date .widget-area, .category .widget-area, .date .widget-area {
+.tag .widget-area,
+.date .widget-area,
+.category .widget-area,
+.date .widget-area {
   padding-left: 5%;
   width: 27%;
   display: block;
   margin-top: 80px; }
-  .tag .widget-area ul, .date .widget-area ul, .category .widget-area ul, .date .widget-area ul {
+  .tag .widget-area h2,
+  .date .widget-area h2,
+  .category .widget-area h2,
+  .date .widget-area h2 {
+    font-family: "Novecento"; }
+  .tag .widget-area ul,
+  .date .widget-area ul,
+  .category .widget-area ul,
+  .date .widget-area ul {
     margin: 0;
     padding: 0;
     font-family: "Merriweather"; }
-  .tag .widget-area a, .date .widget-area a, .category .widget-area a, .date .widget-area a {
+  .tag .widget-area a,
+  .date .widget-area a,
+  .category .widget-area a,
+  .date .widget-area a {
     text-decoration: none; }
-    .tag .widget-area a #phone-number::before, .date .widget-area a #phone-number::before, .category .widget-area a #phone-number::before, .date .widget-area a #phone-number::before {
+    .tag .widget-area a #phone-number::before,
+    .date .widget-area a #phone-number::before,
+    .category .widget-area a #phone-number::before,
+    .date .widget-area a #phone-number::before {
       content: "\f095";
       color: black;
       font-family: "FontAwesome";
       margin-right: 10px; }
-    .tag .widget-area a #mail::before, .date .widget-area a #mail::before, .category .widget-area a #mail::before, .date .widget-area a #mail::before {
+    .tag .widget-area a #mail::before,
+    .date .widget-area a #mail::before,
+    .category .widget-area a #mail::before,
+    .date .widget-area a #mail::before {
       content: "\f0e0";
       color: black;
       font-family: "FontAwesome";
       margin-right: 10px; }
-    .tag .widget-area a #adress, .date .widget-area a #adress, .category .widget-area a #adress, .date .widget-area a #adress {
+    .tag .widget-area a #adress,
+    .date .widget-area a #adress,
+    .category .widget-area a #adress,
+    .date .widget-area a #adress {
       color: black; }
-    .tag .widget-area a #adress::before, .date .widget-area a #adress::before, .category .widget-area a #adress::before, .date .widget-area a #adress::before {
+    .tag .widget-area a #adress::before,
+    .date .widget-area a #adress::before,
+    .category .widget-area a #adress::before,
+    .date .widget-area a #adress::before {
       content: "\f041";
       color: black;
       font-family: "FontAwesome";
       margin-right: 10px; }
-  .tag .widget-area li, .date .widget-area li, .category .widget-area li, .date .widget-area li {
+  .tag .widget-area li,
+  .date .widget-area li,
+  .category .widget-area li,
+  .date .widget-area li {
     list-style: none;
     margin: 20px;
     margin-left: 0px; }
