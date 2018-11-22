@@ -829,7 +829,9 @@ main {
     width: 50px;
     height: 33px;
     background-size: 50px 33px;
-    margin-left: 70px; }
+    margin-left: 70px;
+    overflow: hidden;
+    position: relative; }
     .site-header-nav .logo a {
       color: transparent;
       text-decoration: none; }
@@ -843,7 +845,7 @@ main {
     .site-header-nav .search-label .fa-search {
       color: white; }
   .site-header-nav .search-menu {
-    width: 130px;
+    width: 160px;
     height: 30px;
     margin-top: -20px; }
     .site-header-nav .search-menu fieldset {
@@ -906,8 +908,27 @@ main {
     font-family: "Merriweather"; }
   .page-id-13 .widget-area a {
     text-decoration: none; }
+    .page-id-13 .widget-area a #phone-number::before {
+      content: "\f095";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+    .page-id-13 .widget-area a #mail::before {
+      content: "\f0e0";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+    .page-id-13 .widget-area a #adress {
+      color: black; }
+    .page-id-13 .widget-area a #adress::before {
+      content: "\f041";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
   .page-id-13 .widget-area li {
-    list-style: none; }
+    list-style: none;
+    margin: 20px;
+    margin-left: 0px; }
 
 .bold {
   font-weight: bold; }
@@ -1093,8 +1114,27 @@ label {
       font-family: "Merriweather"; }
     .single-post .widget-area a {
       text-decoration: none; }
+      .single-post .widget-area a #phone-number::before {
+        content: "\f095";
+        color: black;
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .single-post .widget-area a #mail::before {
+        content: "\f0e0";
+        color: black;
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .single-post .widget-area a #adress {
+        color: black; }
+      .single-post .widget-area a #adress::before {
+        content: "\f041";
+        color: black;
+        font-family: "FontAwesome";
+        margin-right: 10px; }
     .single-post .widget-area li {
-      list-style: none; }
+      list-style: none;
+      margin: 20px;
+      margin-left: 0px; }
 
 .home .content-front-page {
   width: 100vw; }
@@ -1642,28 +1682,47 @@ label {
     font-family: "Merriweather"; }
   .page-id-106 .widget-area a {
     text-decoration: none; }
+    .page-id-106 .widget-area a #phone-number::before {
+      content: "\f095";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+    .page-id-106 .widget-area a #mail::before {
+      content: "\f0e0";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+    .page-id-106 .widget-area a #adress {
+      color: black; }
+    .page-id-106 .widget-area a #adress::before {
+      content: "\f041";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
   .page-id-106 .widget-area li {
-    list-style: none; }
+    list-style: none;
+    margin: 20px;
+    margin-left: 0px; }
 
-.tag .entry-title, .date .entry-title, .category .entry-title {
+.tag .entry-title, .date .entry-title, .category .entry-title, .date .entry-title {
   display: none; }
 
-.tag .content-area, .date .content-area, .category .content-area {
+.tag .content-area, .date .content-area, .category .content-area, .date .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 3%;
   width: 73%;
   position: relative;
   margin-top: 60px; }
-  .tag .content-area .journal-article, .date .content-area .journal-article, .category .content-area .journal-article {
+  .tag .content-area .journal-article, .date .content-area .journal-article, .category .content-area .journal-article, .date .content-area .journal-article {
     font-family: "Merriweather";
     margin-bottom: 60px; }
-    .tag .content-area .journal-article .header-article, .date .content-area .journal-article .header-article, .category .content-area .journal-article .header-article {
+    .tag .content-area .journal-article .header-article, .date .content-area .journal-article .header-article, .category .content-area .journal-article .header-article, .date .content-area .journal-article .header-article {
       line-height: 0;
       position: relative; }
-      .tag .content-area .journal-article .header-article .img, .date .content-area .journal-article .header-article .img, .category .content-area .journal-article .header-article .img {
+      .tag .content-area .journal-article .header-article .img, .date .content-area .journal-article .header-article .img, .category .content-area .journal-article .header-article .img, .date .content-area .journal-article .header-article .img {
         height: auto;
         max-width: 100%; }
-      .tag .content-area .journal-article .header-article h2 a, .date .content-area .journal-article .header-article h2 a, .category .content-area .journal-article .header-article h2 a {
+      .tag .content-area .journal-article .header-article h2 a, .date .content-area .journal-article .header-article h2 a, .category .content-area .journal-article .header-article h2 a, .date .content-area .journal-article .header-article h2 a {
         background-color: #248a83;
         color: #fff;
         font-size: 2.1rem;
@@ -1676,7 +1735,7 @@ label {
         margin-top: 2.25rem;
         max-width: 75%;
         top: 0; }
-      .tag .content-area .journal-article .header-article .meta-div, .date .content-area .journal-article .header-article .meta-div, .category .content-area .journal-article .header-article .meta-div {
+      .tag .content-area .journal-article .header-article .meta-div, .date .content-area .journal-article .header-article .meta-div, .category .content-area .journal-article .header-article .meta-div, .date .content-area .journal-article .header-article .meta-div {
         background-color: #248a83;
         bottom: 0;
         color: #fff;
@@ -1688,7 +1747,7 @@ label {
         right: 0;
         text-transform: uppercase;
         overflow: hidden; }
-  .tag .content-area .link-read, .date .content-area .link-read, .category .content-area .link-read {
+  .tag .content-area .link-read, .date .content-area .link-read, .category .content-area .link-read, .date .content-area .link-read {
     position: relative;
     bottom: 12px;
     left: 5px;
@@ -1700,12 +1759,12 @@ label {
     font-family: "Novecento";
     margin-left: -5px;
     margin-top: 30px; }
-    .tag .content-area .link-read:hover, .date .content-area .link-read:hover, .category .content-area .link-read:hover {
+    .tag .content-area .link-read:hover, .date .content-area .link-read:hover, .category .content-area .link-read:hover, .date .content-area .link-read:hover {
       background-color: #248A83;
       color: white;
       border: none; }
 
-.tag .site-content, .date .site-content, .category .site-content {
+.tag .site-content, .date .site-content, .category .site-content, .date .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1715,19 +1774,38 @@ label {
   position: relative;
   z-index: 1; }
 
-.tag .widget-area, .date .widget-area, .category .widget-area {
+.tag .widget-area, .date .widget-area, .category .widget-area, .date .widget-area {
   padding-left: 5%;
   width: 27%;
   display: block;
   margin-top: 80px; }
-  .tag .widget-area ul, .date .widget-area ul, .category .widget-area ul {
+  .tag .widget-area ul, .date .widget-area ul, .category .widget-area ul, .date .widget-area ul {
     margin: 0;
     padding: 0;
     font-family: "Merriweather"; }
-  .tag .widget-area a, .date .widget-area a, .category .widget-area a {
+  .tag .widget-area a, .date .widget-area a, .category .widget-area a, .date .widget-area a {
     text-decoration: none; }
-  .tag .widget-area li, .date .widget-area li, .category .widget-area li {
-    list-style: none; }
+    .tag .widget-area a #phone-number::before, .date .widget-area a #phone-number::before, .category .widget-area a #phone-number::before, .date .widget-area a #phone-number::before {
+      content: "\f095";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+    .tag .widget-area a #mail::before, .date .widget-area a #mail::before, .category .widget-area a #mail::before, .date .widget-area a #mail::before {
+      content: "\f0e0";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+    .tag .widget-area a #adress, .date .widget-area a #adress, .category .widget-area a #adress, .date .widget-area a #adress {
+      color: black; }
+    .tag .widget-area a #adress::before, .date .widget-area a #adress::before, .category .widget-area a #adress::before, .date .widget-area a #adress::before {
+      content: "\f041";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+  .tag .widget-area li, .date .widget-area li, .category .widget-area li, .date .widget-area li {
+    list-style: none;
+    margin: 20px;
+    margin-left: 0px; }
 
 .site-footer {
   background: url(../../images/dark-wood@2x.png);
@@ -1781,6 +1859,16 @@ label {
       .site-footer .widget-container ul a {
         color: white;
         text-decoration: none; }
+        .site-footer .widget-container ul a #phone-number::before {
+          content: "\f095";
+          color: white;
+          font-family: "FontAwesome";
+          margin-right: 10px; }
+        .site-footer .widget-container ul a #mail::before {
+          content: "\f0e0";
+          color: white;
+          font-family: "FontAwesome";
+          margin-right: 10px; }
   .site-footer .container-copyright {
     font-family: "Novecento";
     display: -webkit-box;
@@ -1910,5 +1998,24 @@ label {
       font-family: "Merriweather"; }
     .search-results .site-content .widget-area a {
       text-decoration: none; }
+      .search-results .site-content .widget-area a #phone-number::before {
+        content: "\f095";
+        color: black;
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .search-results .site-content .widget-area a #mail::before {
+        content: "\f0e0";
+        color: black;
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .search-results .site-content .widget-area a #adress {
+        color: black; }
+      .search-results .site-content .widget-area a #adress::before {
+        content: "\f041";
+        color: black;
+        font-family: "FontAwesome";
+        margin-right: 10px; }
     .search-results .site-content .widget-area li {
-      list-style: none; }
+      list-style: none;
+      margin: 20px;
+      margin-left: 0px; }
