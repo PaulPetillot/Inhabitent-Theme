@@ -63,6 +63,26 @@ $post = get_posts($args); // returns an array of posts
 wp_reset_postdata();?>
 	</div>
 	</section>
+	<section class="adventures">
+	<h2>LATEST ADVENTURE </h2>
+	<ul>
+		<?php
+            $args = array( 'post_type' => 'adventure', 'order => ASC', 'post_per_page' => '4' );
+            $adventure_posts = get_posts( $args ); // returns an array of posts
+		   foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+		   <li> 
+				<div class="story-wrapper">
+					<?php the_post_thumbnail();?>
+				<div class="story-info">
+					<h3><a href="<?php the_permalink()?>"><?php the_title();?></a></h3>
+					<a class="link-read" href="<?php the_permalink()?>">READ MORE</a>
+				</div>
+				</div>
+			</li>
+		    <?php endforeach;wp_reset_postdata();?>
+	</ul>
+	<a class="btn-more" href="adventures/">MORE ADVENTURES</a>
+	</section>
 			</div>
 </article><!-- #post-## -->
 <?php get_footer(); ?>
