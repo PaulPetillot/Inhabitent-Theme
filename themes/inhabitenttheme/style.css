@@ -783,22 +783,37 @@ main {
     .site-header .search-label .fa-search {
       color: #248a83; }
   .site-header .search-menu {
-    width: 130px;
     height: 30px;
     margin-top: -20px; }
+    .site-header .search-menu .search-label {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .site-header .search-menu .search-label .fa-search {
+        color: #248a83; }
     .site-header .search-menu fieldset {
       height: 33px;
       border: none; }
-      .site-header .search-menu fieldset input {
+      .site-header .search-menu fieldset input[type='search'] {
+        width: 0;
         font-family: "Novecento";
         background-color: transparent;
-        border: none; }
-        .site-header .search-menu fieldset input::-webkit-input-placeholder {
-          color: #248a83; }
-        .site-header .search-menu fieldset input::-ms-input-placeholder {
-          color: #248a83; }
-        .site-header .search-menu fieldset input::placeholder {
-          color: #248a83; }
+        border: none;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        outline: none;
+        color: black; }
+        .site-header .search-menu fieldset input[type='search']::-webkit-input-placeholder {
+          color: grey; }
+        .site-header .search-menu fieldset input[type='search']::-ms-input-placeholder {
+          color: grey; }
+        .site-header .search-menu fieldset input[type='search']::placeholder {
+          color: grey; }
+        .site-header .search-menu fieldset input[type='search']:focus {
+          width: 160px; }
 
 .site-header-nav {
   display: -webkit-box;
@@ -835,32 +850,38 @@ main {
     .site-header-nav .logo a {
       color: transparent;
       text-decoration: none; }
-  .site-header-nav .search-label {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .site-header-nav .search-label .fa-search {
-      color: white; }
   .site-header-nav .search-menu {
-    width: 160px;
     height: 30px;
     margin-top: -20px; }
+    .site-header-nav .search-menu .search-label {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .site-header-nav .search-menu .search-label .fa-search {
+        color: white; }
     .site-header-nav .search-menu fieldset {
       height: 33px;
       border: none; }
-      .site-header-nav .search-menu fieldset input {
+      .site-header-nav .search-menu fieldset input[type='search'] {
+        width: 0;
         font-family: "Novecento";
         background-color: transparent;
-        border: none; }
-        .site-header-nav .search-menu fieldset input::-webkit-input-placeholder {
-          color: white; }
-        .site-header-nav .search-menu fieldset input::-ms-input-placeholder {
-          color: white; }
-        .site-header-nav .search-menu fieldset input::placeholder {
-          color: white; }
+        border: none;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        outline: none;
+        color: white; }
+        .site-header-nav .search-menu fieldset input[type='search']::-webkit-input-placeholder {
+          color: #f0e4d1; }
+        .site-header-nav .search-menu fieldset input[type='search']::-ms-input-placeholder {
+          color: #f0e4d1; }
+        .site-header-nav .search-menu fieldset input[type='search']::placeholder {
+          color: #f0e4d1; }
+        .site-header-nav .search-menu fieldset input[type='search']:focus {
+          width: 160px; }
 
 .main-navigation {
   margin-right: 70px; }

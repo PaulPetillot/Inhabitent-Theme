@@ -23,5 +23,7 @@ $(document).ready(function() {
            });
         $('.site-nav').removeClass('site-header');
         $('.site-nav').addClass('site-header-nav');
-}});
+}
+
+});
 
