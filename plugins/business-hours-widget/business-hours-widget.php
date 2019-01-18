@@ -9,7 +9,7 @@
  * @package   Biz_Hours
  * @author    Paul Petillot <petillotpaul@gmail.com>
  * @license   GPL-2.0+
- * @link      http://example.com
+ * @link      https://github.com/PaulPetillot
  * @copyright 2018 Paul Petillot
  *
  * @wordpress-plugin

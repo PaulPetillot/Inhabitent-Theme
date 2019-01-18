@@ -1,0 +1,56 @@
+
+//Find-us
+.page-id-13 {
+    .content-area {
+        @include content-area;
+    }
+
+    .site-content {
+        @include site-content;
+
+        h1 {
+            font-family: $nov;
+        }
+
+        h2 {
+            font-family: $nov;
+        }
+
+        p {
+            font-family: $merri;
+        }
+      input.wpcf7-form-control.wpcf7-submit{
+        font-family : $nov;
+        font-size: 16px;
+        text-align: center;
+        padding: 8px;
+        width: 120px;
+        background-color: #248a83;
+        color: white;
+        border: none;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #207a74;
+        }
+      }
+    }
+
+
+    .widget-area {
+        @include widget;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+label {
+    color: #2f1339;
+    display: block;
+    font-family: $nov;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}

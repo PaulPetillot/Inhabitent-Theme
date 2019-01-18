@@ -1,0 +1,74 @@
+//Adventure single page
+.single-adventure {
+    width: 100vw;
+
+    .entry-content {
+        width: 800px;
+        margin: auto;
+
+        .social-media-ul {
+            margin-left: -50px;
+            list-style: none;
+            display: inline-flex;
+
+            .social-media-li {
+                font-family: $nov;
+                font-size: 14px;
+                text-align: center;
+                padding: 8px 20px;
+                width: auto;
+                border: 1px solid black;
+                color: black;
+                list-style: none;
+                margin-left: 10px;
+
+                &:hover {
+                    background-color: #248a83;
+                    color: white;
+                    border: transparent;
+                }
+            }
+
+            .fb::before {
+                content: "\f09a";
+                font-family: "FontAwesome";
+                margin-right: 10px;
+            }
+
+            .twi::before {
+                content: "\f099";
+                font-family: "FontAwesome";
+                margin-right: 10px;
+            }
+
+            .pin::before {
+                content: "\f0d2";
+                font-family: "FontAwesome";
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .entry-header img {
+        width: 100vw;
+        height: auto;
+    }
+
+    h1 {
+        font-family: $nov;
+        text-align: left;
+    }
+
+    p {
+        font-family: $merri;
+        text-align: justify;
+    }
+
+    .entry-meta {
+        font-family: $nov;
+        font-size: 25px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+
+}

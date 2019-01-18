@@ -1,9 +1,10 @@
+@charset "UTF-8";
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Author: Paul Pétillot
+Author URI: https://github.com/PaulPetillot
+Description: A WordPress theme for the Inhabitent website .
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +13,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Inhabitent Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -406,11 +407,11 @@ table {
 /* Buttons */
 button,
 input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type="reset"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
+  font-family: "Novecento";
   background: #e6e6e6;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
@@ -422,8 +423,7 @@ input[type="submit"] {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
   input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
+  input[type="reset"]:hover {
     border-color: #ccc #bbb #aaa;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
@@ -431,9 +431,7 @@ input[type="submit"] {
   input[type="button"]:active,
   input[type="button"]:focus,
   input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
+  input[type="reset"]:focus {
     border-color: #aaa #bbb #bbb;
     -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
@@ -445,6 +443,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
+  font-family: "Novecento";
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px; }
@@ -461,6 +460,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
+  font-family: "Novecento";
   padding: 3px;
   color: #666;
   background-color: #f4f4f4;
@@ -726,8 +726,6 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-/* nav-bar*/
 main {
   width: 100%; }
 
@@ -886,282 +884,6 @@ main {
 .main-navigation {
   margin-right: 70px; }
 
-.site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  z-index: 1; }
-
-.page-id-13 .content-area {
-  border-right: 1px solid #e1e1e1;
-  padding-right: 3%;
-  width: 73%;
-  position: relative;
-  margin-top: 60px; }
-
-.page-id-13 .site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-  position: relative;
-  z-index: 1; }
-  .page-id-13 .site-content h1 {
-    font-family: "Novecento"; }
-  .page-id-13 .site-content h2 {
-    font-family: "Novecento"; }
-  .page-id-13 .site-content p {
-    font-family: "Merriweather"; }
-
-.page-id-13 .widget-area {
-  padding-left: 5%;
-  width: 27%;
-  display: block;
-  margin-top: 80px; }
-  .page-id-13 .widget-area ul {
-    margin: 0;
-    padding: 0;
-    font-family: "Merriweather"; }
-  .page-id-13 .widget-area a {
-    text-decoration: none; }
-    .page-id-13 .widget-area a #phone-number::before {
-      content: "\f095";
-      color: black;
-      font-family: "FontAwesome";
-      margin-right: 10px; }
-    .page-id-13 .widget-area a #mail::before {
-      content: "\f0e0";
-      color: black;
-      font-family: "FontAwesome";
-      margin-right: 10px; }
-    .page-id-13 .widget-area a #adress {
-      color: black;
-      text-indent: -20px;
-      padding-left: 25px; }
-    .page-id-13 .widget-area a #adress::before {
-      content: "\f041";
-      color: black;
-      font-family: "FontAwesome";
-      margin-right: 10px;
-      padding-right: 3px; }
-  .page-id-13 .widget-area li {
-    list-style: none;
-    margin: 20px;
-    margin-left: 0px; }
-
-.bold {
-  font-weight: bold; }
-
-label {
-  color: #2f1339;
-  display: block;
-  font-family: "Novecento";
-  font-size: 1.1rem;
-  margin-bottom: .5rem;
-  text-transform: uppercase; }
-
-.page-id-11 header.entry-header {
-  display: none; }
-
-.page-id-11 .hero-image-header {
-  width: 100vw;
-  height: 700px;
-  margin-top: -50px; }
-
-.page-id-11 h1 {
-  font-family: "Novecento";
-  color: white;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.page-id-11 h2 {
-  font-family: "Novecento";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.page-id-11 p {
-  font-family: "Merriweather";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px; }
-
-.single-post {
-  font-family: "Merriweather"; }
-  .single-post .social-media-ul {
-    list-style: none;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin-left: -50px; }
-    .single-post .social-media-ul .social-media-li {
-      font-family: "Novecento";
-      font-size: 14px;
-      text-align: center;
-      padding: 8px 20px;
-      width: auto;
-      border: 1px solid black;
-      color: black;
-      list-style: none;
-      margin-left: 10px; }
-      .single-post .social-media-ul .social-media-li:hover {
-        background-color: #248a83;
-        color: white;
-        border: transparent; }
-    .single-post .social-media-ul .fb::before {
-      content: "\f09a";
-      font-family: "FontAwesome";
-      margin-right: 10px; }
-    .single-post .social-media-ul .twi::before {
-      content: "\f099";
-      font-family: "FontAwesome";
-      margin-right: 10px; }
-    .single-post .social-media-ul .pin::before {
-      content: "\f0d2";
-      font-family: "FontAwesome";
-      margin-right: 10px; }
-  .single-post .entry-header {
-    line-height: 0;
-    position: relative; }
-  .single-post .site-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1120px;
-    position: relative;
-    z-index: 1; }
-  .single-post .content-area {
-    border-right: 1px solid #e1e1e1;
-    padding-right: 3%;
-    width: 73%;
-    position: relative;
-    margin-top: 70px; }
-    .single-post .content-area h1 {
-      background-color: #248a83;
-      color: #fff;
-      font-size: 33.6px;
-      font-size: 2.1rem;
-      left: 0;
-      padding: .75rem 1.5rem;
-      position: absolute;
-      margin-top: 2.25rem;
-      max-width: 75%;
-      top: 0;
-      line-height: 40px;
-      font-family: "Novecento"; }
-    .single-post .content-area img {
-      width: 100%;
-      height: auto; }
-    .single-post .content-area .entry-meta {
-      right: 0;
-      bottom: 0;
-      background-color: #248a83;
-      color: white;
-      display: inline-block;
-      font-family: "Novecento";
-      padding: 0.85rem 1.2rem;
-      position: absolute;
-      text-transform: uppercase; }
-      .single-post .content-area .entry-meta a {
-        color: white; }
-    .single-post .content-area p {
-      font-family: "Merriweather"; }
-    .single-post .content-area h3 {
-      font-size: 27px; }
-    .single-post .content-area .cat-links {
-      font-family: "Novecento";
-      margin-right: 1.5rem; }
-      .single-post .content-area .cat-links a {
-        color: #248a83;
-        text-decoration: none; }
-    .single-post .content-area .tags-links {
-      font-family: "Novecento";
-      margin-right: 1.5rem; }
-      .single-post .content-area .tags-links a {
-        color: #248a83;
-        text-decoration: none; }
-    .single-post .content-area .nav-next {
-      display: none; }
-    .single-post .content-area .nav-previous {
-      display: none; }
-    .single-post .content-area .comment-author-avatar {
-      width: 60px;
-      height: 60px;
-      margin-right: 30px; }
-      .single-post .content-area .comment-author-avatar img {
-        border-radius: 50px; }
-    .single-post .content-area .comment-body {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; }
-    .single-post .content-area .comment-list {
-      margin-left: 0;
-      padding-bottom: 30px;
-      border-bottom: 1px solid #e1e1e1; }
-    .single-post .content-area .comment-author {
-      font-weight: bold;
-      font-size: 20px; }
-    .single-post .content-area .comment-metadata {
-      color: grey; }
-    .single-post .content-area .reply a {
-      text-decoration: none; }
-  .single-post .widget-area {
-    padding-left: 5%;
-    width: 27%;
-    display: block;
-    margin-top: 80px; }
-    .single-post .widget-area h2 {
-      font-family: "Novecento"; }
-    .single-post .widget-area ul {
-      margin: 0;
-      padding: 0;
-      font-family: "Merriweather"; }
-    .single-post .widget-area a {
-      text-decoration: none; }
-      .single-post .widget-area a #phone-number::before {
-        content: "\f095";
-        color: black;
-        font-family: "FontAwesome";
-        margin-right: 10px; }
-      .single-post .widget-area a #mail::before {
-        content: "\f0e0";
-        color: black;
-        font-family: "FontAwesome";
-        margin-right: 10px; }
-      .single-post .widget-area a #adress {
-        color: black; }
-      .single-post .widget-area a #adress::before {
-        content: "\f041";
-        color: black;
-        font-family: "FontAwesome";
-        margin-right: 10px; }
-    .single-post .widget-area li {
-      list-style: none;
-      margin: 20px;
-      margin-left: 0px; }
-
 .home .content-front-page {
   width: 100vw; }
 
@@ -1251,14 +973,16 @@ label {
       left: 5px;
       border: 1px solid #000;
       color: #000;
-      padding: 10px 15px;
+      padding: 10px 20px;
       text-decoration: none;
-      font-size: 12px;
-      font-family: "Novecento"; }
-    .home .section-post .journal-article .link-read:hover {
-      background-color: #248A83;
-      color: white;
-      border: none; }
+      font-size: 14px;
+      font-family: "Novecento";
+      margin-left: -5px;
+      margin-top: 30px; }
+      .home .section-post .journal-article .link-read:hover {
+        background-color: #248A83;
+        color: white;
+        border: none; }
 
 .home .adventures {
   margin-bottom: 0px; }
@@ -1518,76 +1242,6 @@ label {
       border: 1px solid #d99054;
       border-top-width: 5px; }
 
-.single-product {
-  width: 100vw; }
-  .single-product .nav-links {
-    display: none; }
-  .single-product .entire-product {
-    margin-top: 80px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .single-product .entire-product .entry-header {
-      padding: 50px;
-      width: 48%; }
-      .single-product .entire-product .entry-header .image-wrapper-product img {
-        height: auto;
-        max-width: 100%; }
-    .single-product .entire-product .content-product-wrapper {
-      padding: 50px;
-      width: 52%;
-      font-family: "Merriweather"; }
-      .single-product .entire-product .content-product-wrapper h1 {
-        color: #d99054;
-        margin-bottom: -25px; }
-      .single-product .entire-product .content-product-wrapper .price-product p {
-        font-family: "Novecento";
-        font-size: 25px;
-        margin-bottom: -10px; }
-    .single-product .entire-product .social-media-ul {
-      list-style: none;
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex; }
-      .single-product .entire-product .social-media-ul .social-media-li {
-        font-family: "Novecento";
-        font-size: 14px;
-        text-align: center;
-        padding: 8px 20px;
-        width: auto;
-        border: 1px solid black;
-        color: black;
-        list-style: none;
-        margin-left: 10px; }
-        .single-product .entire-product .social-media-ul .social-media-li:hover {
-          background-color: #248a83;
-          color: white;
-          border: transparent; }
-      .single-product .entire-product .social-media-ul .fb::before {
-        content: "\f09a";
-        font-family: "FontAwesome";
-        margin-right: 10px; }
-      .single-product .entire-product .social-media-ul .twi::before {
-        content: "\f099";
-        font-family: "FontAwesome";
-        margin-right: 10px; }
-      .single-product .entire-product .social-media-ul .pin::before {
-        content: "\f0d2";
-        font-family: "FontAwesome";
-        margin-right: 10px; }
-
 .post-type-archive-product {
   width: 100vw; }
   .post-type-archive-product .content-area {
@@ -1802,6 +1456,76 @@ label {
         padding-right: .25rem;
         text-transform: none; }
 
+.single-product {
+  width: 100vw; }
+  .single-product .nav-links {
+    display: none; }
+  .single-product .entire-product {
+    margin-top: 80px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .single-product .entire-product .entry-header {
+      padding: 50px;
+      width: 48%; }
+      .single-product .entire-product .entry-header .image-wrapper-product img {
+        height: auto;
+        max-width: 100%; }
+    .single-product .entire-product .content-product-wrapper {
+      padding: 50px;
+      width: 52%;
+      font-family: "Merriweather"; }
+      .single-product .entire-product .content-product-wrapper h1 {
+        color: #d99054;
+        margin-bottom: -25px; }
+      .single-product .entire-product .content-product-wrapper .price-product p {
+        font-family: "Novecento";
+        font-size: 25px;
+        margin-bottom: -10px; }
+    .single-product .entire-product .social-media-ul {
+      list-style: none;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+      .single-product .entire-product .social-media-ul .social-media-li {
+        font-family: "Novecento";
+        font-size: 14px;
+        text-align: center;
+        padding: 8px 20px;
+        width: auto;
+        border: 1px solid black;
+        color: black;
+        list-style: none;
+        margin-left: 10px; }
+        .single-product .entire-product .social-media-ul .social-media-li:hover {
+          background-color: #248a83;
+          color: white;
+          border: transparent; }
+      .single-product .entire-product .social-media-ul .fb::before {
+        content: "\f09a";
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .single-product .entire-product .social-media-ul .twi::before {
+        content: "\f099";
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .single-product .entire-product .social-media-ul .pin::before {
+        content: "\f0d2";
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+
 .page-id-106 .entry-title {
   display: none; }
 
@@ -1821,7 +1545,7 @@ label {
         height: auto;
         max-width: 100%; }
       .page-id-106 .content-area .journal-article .header-article h2 a {
-        background-color: #248a83;
+        background-color: #248A83;
         color: #fff;
         font-size: 2.1rem;
         left: 0;
@@ -1834,7 +1558,7 @@ label {
         max-width: 75%;
         top: 0; }
       .page-id-106 .content-area .journal-article .header-article .meta-div {
-        background-color: #248a83;
+        background-color: #248A83;
         bottom: 0;
         color: #fff;
         display: inline-block;
@@ -1877,8 +1601,6 @@ label {
   width: 27%;
   display: block;
   margin-top: 80px; }
-  .page-id-106 .widget-area h2 {
-    font-family: "Novecento"; }
   .page-id-106 .widget-area ul {
     margin: 0;
     padding: 0;
@@ -1949,7 +1671,7 @@ label {
       .date .content-area .journal-article .header-article h2 a,
       .category .content-area .journal-article .header-article h2 a,
       .date .content-area .journal-article .header-article h2 a {
-        background-color: #248a83;
+        background-color: #248A83;
         color: #fff;
         font-size: 2.1rem;
         left: 0;
@@ -1965,7 +1687,7 @@ label {
       .date .content-area .journal-article .header-article .meta-div,
       .category .content-area .journal-article .header-article .meta-div,
       .date .content-area .journal-article .header-article .meta-div {
-        background-color: #248a83;
+        background-color: #248A83;
         bottom: 0;
         color: #fff;
         display: inline-block;
@@ -2020,11 +1742,6 @@ label {
   width: 27%;
   display: block;
   margin-top: 80px; }
-  .tag .widget-area h2,
-  .date .widget-area h2,
-  .category .widget-area h2,
-  .date .widget-area h2 {
-    font-family: "Novecento"; }
   .tag .widget-area ul,
   .date .widget-area ul,
   .category .widget-area ul,
@@ -2070,6 +1787,561 @@ label {
   .date .widget-area li,
   .category .widget-area li,
   .date .widget-area li {
+    list-style: none;
+    margin: 20px;
+    margin-left: 0px; }
+
+.single-post {
+  font-family: "Merriweather"; }
+  .single-post .social-media-ul {
+    list-style: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: -50px; }
+    .single-post .social-media-ul .social-media-li {
+      font-family: "Novecento";
+      font-size: 14px;
+      text-align: center;
+      padding: 8px 20px;
+      width: auto;
+      border: 1px solid black;
+      color: black;
+      list-style: none;
+      margin-left: 10px; }
+      .single-post .social-media-ul .social-media-li:hover {
+        background-color: #248a83;
+        color: white;
+        border: transparent; }
+    .single-post .social-media-ul .fb::before {
+      content: "\f09a";
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+    .single-post .social-media-ul .twi::before {
+      content: "\f099";
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+    .single-post .social-media-ul .pin::before {
+      content: "\f0d2";
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+  .single-post .entry-header {
+    line-height: 0;
+    position: relative; }
+  .single-post .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    position: relative;
+    z-index: 1; }
+  .single-post .content-area {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 3%;
+    width: 73%;
+    position: relative;
+    margin-top: 60px; }
+    .single-post .content-area h1 {
+      background-color: #248a83;
+      color: #fff;
+      font-size: 33.6px;
+      font-size: 2.1rem;
+      left: 0;
+      padding: .75rem 1.5rem;
+      position: absolute;
+      margin-top: 2.25rem;
+      max-width: 75%;
+      top: 0;
+      line-height: 40px;
+      font-family: "Novecento"; }
+    .single-post .content-area img {
+      width: 100%;
+      height: auto; }
+    .single-post .content-area .entry-meta {
+      right: 0;
+      bottom: 0;
+      background-color: #248a83;
+      color: white;
+      display: inline-block;
+      font-family: "Novecento";
+      padding: 0.85rem 1.2rem;
+      position: absolute;
+      text-transform: uppercase; }
+      .single-post .content-area .entry-meta a {
+        color: white; }
+    .single-post .content-area p {
+      font-family: "Merriweather"; }
+    .single-post .content-area h3 {
+      font-size: 27px; }
+    .single-post .content-area .cat-links {
+      font-family: "Novecento";
+      margin-right: 1.5rem; }
+      .single-post .content-area .cat-links a {
+        color: #248a83;
+        text-decoration: none; }
+    .single-post .content-area .tags-links {
+      font-family: "Novecento";
+      margin-right: 1.5rem; }
+      .single-post .content-area .tags-links a {
+        color: #248a83;
+        text-decoration: none; }
+    .single-post .content-area .nav-next {
+      display: none; }
+    .single-post .content-area .nav-previous {
+      display: none; }
+    .single-post .content-area .comment-author-avatar {
+      width: 60px;
+      height: 60px;
+      margin-right: 30px; }
+      .single-post .content-area .comment-author-avatar img {
+        border-radius: 50px; }
+    .single-post .content-area .comment-body {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+    .single-post .content-area .comment-list {
+      margin-left: 0;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e1e1e1; }
+    .single-post .content-area .comment-author {
+      font-weight: bold;
+      font-size: 20px; }
+    .single-post .content-area .comment-metadata {
+      color: grey; }
+    .single-post .content-area .reply a {
+      text-decoration: none; }
+    .single-post .content-area .form-submit input#submit.submit {
+      font-family: "Novecento";
+      font-size: 14px;
+      text-align: center;
+      padding: 12px;
+      width: 120px;
+      background-color: #248a83;
+      color: white;
+      border: none;
+      text-decoration: none; }
+      .single-post .content-area .form-submit input#submit.submit:hover {
+        background-color: #207a74; }
+  .single-post .widget-area {
+    padding-left: 5%;
+    width: 27%;
+    display: block;
+    margin-top: 80px; }
+    .single-post .widget-area ul {
+      margin: 0;
+      padding: 0;
+      font-family: "Merriweather"; }
+    .single-post .widget-area a {
+      text-decoration: none; }
+      .single-post .widget-area a #phone-number::before {
+        content: "\f095";
+        color: black;
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .single-post .widget-area a #mail::before {
+        content: "\f0e0";
+        color: black;
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .single-post .widget-area a #adress {
+        color: black; }
+      .single-post .widget-area a #adress::before {
+        content: "\f041";
+        color: black;
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+    .single-post .widget-area li {
+      list-style: none;
+      margin: 20px;
+      margin-left: 0px; }
+
+.post-type-archive-adventure {
+  width: 100vw; }
+  .post-type-archive-adventure h1 {
+    font-family: "Novecento";
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 165px;
+    border-bottom: 1px dashed #a1a1a1;
+    width: 920px; }
+  .post-type-archive-adventure .adventure-grid {
+    width: 1120px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 0 160px; }
+    .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-wrapper {
+      overflow: hidden;
+      position: relative;
+      height: 450px;
+      width: 450px;
+      margin-bottom: -15px; }
+      .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-wrapper img {
+        z-index: 1;
+        max-height: 550px;
+        max-width: none;
+        width: 650px;
+        position: absolute;
+        -webkit-filter: brightness(70%);
+                filter: brightness(70%); }
+    .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info {
+      margin: 1.5rem;
+      position: absolute;
+      z-index: 2; }
+      .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info h3 {
+        font-size: 35px;
+        font-family: "Merriweather";
+        font-weight: 400;
+        margin-top: 24px;
+        text-transform: none; }
+        .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info h3 a {
+          text-decoration: none;
+          color: #fff; }
+          .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info h3 a:hover {
+            color: #f0e4d1; }
+      .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info .link-read {
+        position: relative;
+        bottom: 12px;
+        left: 5px;
+        border: 1px solid white;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: "Novecento";
+        margin-left: -5px; }
+        .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info .link-read:hover {
+          background-color: #248A83;
+          color: white;
+          border: none; }
+
+.single-adventure {
+  width: 100vw; }
+  .single-adventure .entry-content {
+    width: 800px;
+    margin: auto; }
+    .single-adventure .entry-content .social-media-ul {
+      margin-left: -50px;
+      list-style: none;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+      .single-adventure .entry-content .social-media-ul .social-media-li {
+        font-family: "Novecento";
+        font-size: 14px;
+        text-align: center;
+        padding: 8px 20px;
+        width: auto;
+        border: 1px solid black;
+        color: black;
+        list-style: none;
+        margin-left: 10px; }
+        .single-adventure .entry-content .social-media-ul .social-media-li:hover {
+          background-color: #248a83;
+          color: white;
+          border: transparent; }
+      .single-adventure .entry-content .social-media-ul .fb::before {
+        content: "\f09a";
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .single-adventure .entry-content .social-media-ul .twi::before {
+        content: "\f099";
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .single-adventure .entry-content .social-media-ul .pin::before {
+        content: "\f0d2";
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+  .single-adventure .entry-header img {
+    width: 100vw;
+    height: auto; }
+  .single-adventure h1 {
+    font-family: "Novecento";
+    text-align: left; }
+  .single-adventure p {
+    font-family: "Merriweather";
+    text-align: justify; }
+  .single-adventure .entry-meta {
+    font-family: "Novecento";
+    font-size: 25px;
+    margin-top: -30px;
+    margin-bottom: 30px; }
+
+.page-id-11 header.entry-header {
+  display: none; }
+
+.page-id-11 .hero-image-header {
+  width: 100vw;
+  height: 700px;
+  margin-top: -50px; }
+
+.page-id-11 h1 {
+  font-family: "Novecento";
+  color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-id-11 h2 {
+  font-family: "Novecento";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-id-11 p {
+  font-family: "Merriweather";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px; }
+
+.page-id-13 .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 3%;
+  width: 73%;
+  position: relative;
+  margin-top: 60px; }
+
+.page-id-13 .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  position: relative;
+  z-index: 1; }
+  .page-id-13 .site-content h1 {
+    font-family: "Novecento"; }
+  .page-id-13 .site-content h2 {
+    font-family: "Novecento"; }
+  .page-id-13 .site-content p {
+    font-family: "Merriweather"; }
+  .page-id-13 .site-content input.wpcf7-form-control.wpcf7-submit {
+    font-family: "Novecento";
+    font-size: 16px;
+    text-align: center;
+    padding: 8px;
+    width: 120px;
+    background-color: #248a83;
+    color: white;
+    border: none;
+    text-decoration: none; }
+    .page-id-13 .site-content input.wpcf7-form-control.wpcf7-submit:hover {
+      background-color: #207a74; }
+
+.page-id-13 .widget-area {
+  padding-left: 5%;
+  width: 27%;
+  display: block;
+  margin-top: 80px; }
+  .page-id-13 .widget-area ul {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather"; }
+  .page-id-13 .widget-area a {
+    text-decoration: none; }
+    .page-id-13 .widget-area a #phone-number::before {
+      content: "\f095";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+    .page-id-13 .widget-area a #mail::before {
+      content: "\f0e0";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+    .page-id-13 .widget-area a #adress {
+      color: black; }
+    .page-id-13 .widget-area a #adress::before {
+      content: "\f041";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+  .page-id-13 .widget-area li {
+    list-style: none;
+    margin: 20px;
+    margin-left: 0px; }
+
+.bold {
+  font-weight: bold; }
+
+label {
+  color: #2f1339;
+  display: block;
+  font-family: "Novecento";
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase; }
+
+.search-results .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 3%;
+  width: 73%;
+  position: relative;
+  margin-top: 60px; }
+
+.search-results .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  position: relative;
+  z-index: 1; }
+  .search-results .site-content h1 {
+    font-family: "Novecento";
+    overflow: hidden;
+    margin-top: -40px; }
+  .search-results .site-content .link-read {
+    position: relative;
+    bottom: 12px;
+    left: 5px;
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Novecento";
+    margin-left: -5px;
+    margin-top: 30px; }
+    .search-results .site-content .link-read:hover {
+      background-color: #248A83;
+      color: white;
+      border: none; }
+  .search-results .site-content fieldset {
+    margin-left: -10px;
+    border: none; }
+    .search-results .site-content fieldset input {
+      font-family: "Merriweather"; }
+  .search-results .site-content h1 {
+    font-family: "Novecento"; }
+  .search-results .site-content h2 {
+    font-family: "Novecento"; }
+  .search-results .site-content p {
+    font-family: "Merriweather"; }
+  .search-results .site-content a {
+    text-decoration: none; }
+  .search-results .site-content ul {
+    margin-left: 0;
+    padding-left: 0; }
+    .search-results .site-content ul li {
+      list-style: none; }
+  .search-results .site-content .widget-area {
+    padding-left: 5%;
+    width: 27%;
+    display: block;
+    margin-top: 80px; }
+    .search-results .site-content .widget-area ul {
+      margin: 0;
+      padding: 0;
+      font-family: "Merriweather"; }
+    .search-results .site-content .widget-area a {
+      text-decoration: none; }
+      .search-results .site-content .widget-area a #phone-number::before {
+        content: "\f095";
+        color: black;
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .search-results .site-content .widget-area a #mail::before {
+        content: "\f0e0";
+        color: black;
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+      .search-results .site-content .widget-area a #adress {
+        color: black; }
+      .search-results .site-content .widget-area a #adress::before {
+        content: "\f041";
+        color: black;
+        font-family: "FontAwesome";
+        margin-right: 10px; }
+    .search-results .site-content .widget-area li {
+      list-style: none;
+      margin: 20px;
+      margin-left: 0px; }
+
+.error404 .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 3%;
+  width: 73%;
+  position: relative;
+  margin-top: 60px; }
+
+.error404 .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  position: relative;
+  z-index: 1; }
+  .error404 .site-content fieldset {
+    margin-left: -10px;
+    border: none; }
+    .error404 .site-content fieldset input {
+      font-family: "Merriweather"; }
+  .error404 .site-content h1 {
+    font-family: "Novecento"; }
+  .error404 .site-content h2 {
+    font-family: "Novecento"; }
+  .error404 .site-content p {
+    font-family: "Merriweather"; }
+  .error404 .site-content a {
+    text-decoration: none; }
+  .error404 .site-content ul {
+    margin-left: 0;
+    padding-left: 0; }
+    .error404 .site-content ul li {
+      list-style: none; }
+
+.error404 .widget-area {
+  padding-left: 5%;
+  width: 27%;
+  display: block;
+  margin-top: 80px; }
+  .error404 .widget-area ul {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather"; }
+  .error404 .widget-area a {
+    text-decoration: none; }
+    .error404 .widget-area a #phone-number::before {
+      content: "\f095";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+    .error404 .widget-area a #mail::before {
+      content: "\f0e0";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+    .error404 .widget-area a #adress {
+      color: black; }
+    .error404 .widget-area a #adress::before {
+      content: "\f041";
+      color: black;
+      font-family: "FontAwesome";
+      margin-right: 10px; }
+  .error404 .widget-area li {
     list-style: none;
     margin: 20px;
     margin-left: 0px; }
@@ -2155,251 +2427,11 @@ label {
     margin-left: 300px;
     margin-bottom: 70px; }
 
-.error404 .content-area {
-  border-right: 1px solid #e1e1e1;
-  padding-right: 3%;
-  width: 73%;
-  position: relative;
-  margin-top: 60px; }
-
-.error404 .site-content {
+.site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 1120px;
   position: relative;
   z-index: 1; }
-  .error404 .site-content fieldset {
-    margin-left: -10px;
-    border: none; }
-    .error404 .site-content fieldset input {
-      font-family: "Merriweather"; }
-  .error404 .site-content h1 {
-    font-family: "Novecento"; }
-  .error404 .site-content h2 {
-    font-family: "Novecento"; }
-  .error404 .site-content p {
-    font-family: "Merriweather"; }
-  .error404 .site-content a {
-    text-decoration: none; }
-  .error404 .site-content ul {
-    margin-left: 0;
-    padding-left: 0; }
-    .error404 .site-content ul li {
-      list-style: none; }
-
-.error404 .widget-area {
-  padding-left: 5%;
-  width: 27%;
-  display: block;
-  margin-top: 80px; }
-  .error404 .widget-area ul {
-    margin: 0;
-    padding: 0;
-    font-family: "Merriweather"; }
-  .error404 .widget-area a {
-    text-decoration: none; }
-  .error404 .widget-area li {
-    list-style: none; }
-
-.search-results .content-area {
-  border-right: 1px solid #e1e1e1;
-  padding-right: 3%;
-  width: 73%;
-  position: relative;
-  margin-top: 60px; }
-
-.search-results .site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-  position: relative;
-  z-index: 1; }
-  .search-results .site-content h1 {
-    font-family: "Novecento";
-    overflow: hidden;
-    margin-top: -40px; }
-  .search-results .site-content .link-read {
-    position: relative;
-    bottom: 12px;
-    left: 5px;
-    border: 1px solid #000;
-    color: #000;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Novecento";
-    margin-left: -5px; }
-    .search-results .site-content .link-read:hover {
-      background-color: #248A83;
-      color: white;
-      border: none; }
-  .search-results .site-content fieldset {
-    margin-left: -10px;
-    border: none; }
-    .search-results .site-content fieldset input {
-      font-family: "Merriweather"; }
-  .search-results .site-content h1 {
-    font-family: "Novecento"; }
-  .search-results .site-content h2 {
-    font-family: "Novecento"; }
-  .search-results .site-content p {
-    font-family: "Merriweather"; }
-  .search-results .site-content a {
-    text-decoration: none; }
-  .search-results .site-content ul {
-    margin-left: 0;
-    padding-left: 0; }
-    .search-results .site-content ul li {
-      list-style: none; }
-  .search-results .site-content .widget-area {
-    padding-left: 5%;
-    width: 27%;
-    display: block;
-    margin-top: 80px; }
-    .search-results .site-content .widget-area ul {
-      margin: 0;
-      padding: 0;
-      font-family: "Merriweather"; }
-    .search-results .site-content .widget-area a {
-      text-decoration: none; }
-      .search-results .site-content .widget-area a #phone-number::before {
-        content: "\f095";
-        color: black;
-        font-family: "FontAwesome";
-        margin-right: 10px; }
-      .search-results .site-content .widget-area a #mail::before {
-        content: "\f0e0";
-        color: black;
-        font-family: "FontAwesome";
-        margin-right: 10px; }
-      .search-results .site-content .widget-area a #adress {
-        color: black; }
-      .search-results .site-content .widget-area a #adress::before {
-        content: "\f041";
-        color: black;
-        font-family: "FontAwesome";
-        margin-right: 10px; }
-    .search-results .site-content .widget-area li {
-      list-style: none;
-      margin: 20px;
-      margin-left: 0px; }
-
-.single-adventure {
-  width: 100vw; }
-  .single-adventure .entry-content {
-    width: 800px;
-    margin: auto; }
-    .single-adventure .entry-content .social-media-ul {
-      margin-left: -50px;
-      list-style: none;
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex; }
-      .single-adventure .entry-content .social-media-ul .social-media-li {
-        font-family: "Novecento";
-        font-size: 14px;
-        text-align: center;
-        padding: 8px 20px;
-        width: auto;
-        border: 1px solid black;
-        color: black;
-        list-style: none;
-        margin-left: 10px; }
-        .single-adventure .entry-content .social-media-ul .social-media-li:hover {
-          background-color: #248a83;
-          color: white;
-          border: transparent; }
-      .single-adventure .entry-content .social-media-ul .fb::before {
-        content: "\f09a";
-        font-family: "FontAwesome";
-        margin-right: 10px; }
-      .single-adventure .entry-content .social-media-ul .twi::before {
-        content: "\f099";
-        font-family: "FontAwesome";
-        margin-right: 10px; }
-      .single-adventure .entry-content .social-media-ul .pin::before {
-        content: "\f0d2";
-        font-family: "FontAwesome";
-        margin-right: 10px; }
-  .single-adventure .entry-header img {
-    width: 100vw;
-    height: auto; }
-  .single-adventure h1 {
-    font-family: "Novecento";
-    text-align: left; }
-  .single-adventure p {
-    font-family: "Merriweather";
-    text-align: justify; }
-  .single-adventure .entry-meta {
-    font-family: "Novecento";
-    font-size: 25px;
-    margin-top: -30px;
-    margin-bottom: 30px; }
-
-.post-type-archive-adventure {
-  width: 100vw; }
-  .post-type-archive-adventure h1 {
-    font-family: "Novecento";
-    margin-top: 100px;
-    text-align: center;
-    padding-bottom: 20px;
-    margin-left: 165px;
-    border-bottom: 1px dashed #a1a1a1;
-    width: 920px; }
-  .post-type-archive-adventure .adventure-grid {
-    width: 1120px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    padding: 0 160px; }
-    .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-wrapper {
-      overflow: hidden;
-      position: relative;
-      height: 450px;
-      width: 450px;
-      margin-bottom: -15px; }
-      .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-wrapper img {
-        z-index: 1;
-        max-height: 550px;
-        max-width: none;
-        width: 650px;
-        position: absolute;
-        -webkit-filter: brightness(70%);
-                filter: brightness(70%); }
-    .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info {
-      margin: 1.5rem;
-      position: absolute;
-      z-index: 2; }
-      .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info h3 {
-        font-size: 35px;
-        font-family: "Merriweather";
-        font-weight: 400;
-        margin-top: 24px;
-        text-transform: none; }
-        .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info h3 a {
-          text-decoration: none;
-          color: #fff; }
-          .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info h3 a:hover {
-            color: #f0e4d1; }
-      .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info .link-read {
-        position: relative;
-        bottom: 12px;
-        left: 5px;
-        border: 1px solid white;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        font-size: 14px;
-        font-family: "Novecento";
-        margin-left: -5px; }
-        .post-type-archive-adventure .adventure-grid .adventure-grid-item .story-info .link-read:hover {
-          background-color: #248A83;
-          color: white;
-          border: none; }

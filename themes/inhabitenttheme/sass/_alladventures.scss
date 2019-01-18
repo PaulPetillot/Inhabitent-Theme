@@ -1,0 +1,83 @@
+//All adventure page
+.post-type-archive-adventure {
+    width: 100vw;
+    h1{
+        font-family: $nov;
+        margin-top: 100px;
+        text-align: center;
+        padding-bottom: 20px;
+        margin-left: 165px;
+        border-bottom: 1px dashed #a1a1a1;
+        width: 920px;
+    }
+    .adventure-grid {
+        width: 1120px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        padding: 0 160px;
+
+        .adventure-grid-item {
+
+            .story-wrapper {
+                overflow: hidden;
+                position: relative;
+                height: 450px;
+                width: 450px;
+                margin-bottom: -15px;
+
+                img {
+                    z-index: 1;
+                    max-height: 550px;
+                    max-width: none;
+                    width: 650px;
+                    position: absolute;
+                    filter: brightness(70%);
+                }
+            }
+
+            .story-info {
+                margin: 1.5rem;
+                position: absolute;
+                z-index: 2;
+
+                h3 {
+                    font-size: 35px;
+                    font-family: $merri;
+                    font-weight: 400;
+                    margin-top: 24px;
+                    text-transform: none;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+
+                        &:hover {
+                            color: #f0e4d1;
+                        }
+                    }
+                }
+                .link-read {
+
+                    position: relative;
+                    bottom: 12px;
+                    left: 5px;
+                    border: 1px solid white;
+                    color: white;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-family: $nov;
+                    margin-left: -5px;
+
+                    &:hover {
+                        background-color: $color__link-visited;
+                        color: white;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

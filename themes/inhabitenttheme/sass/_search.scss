@@ -1,0 +1,61 @@
+//Search result part
+.search-results {
+    .content-area {
+        @include content-area;
+    }
+
+    .site-content {
+        @include site-content;
+
+        h1 {
+            font-family: $nov;
+            overflow: hidden;
+            margin-top: -40px;
+        }
+
+        .link-read {
+            @include link-read;
+        }
+
+        fieldset {
+            margin-left: -10px;
+            border: none;
+
+            input {
+                font-family: $merri;
+            }
+        }
+
+        h1 {
+            font-family: $nov;
+        }
+
+        h2 {
+            font-family: $nov;
+        }
+
+        p {
+            font-family: $merri;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            margin-left: 0;
+            padding-left: 0;
+
+            li {
+                list-style: none;
+            }
+        }
+
+
+
+
+        .widget-area {
+            @include widget;
+        }
+    }
+}

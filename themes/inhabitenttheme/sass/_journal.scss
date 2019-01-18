@@ -1,0 +1,159 @@
+
+//Journal
+.page-id-106 {
+    .entry-title {
+        display: none;
+    }
+
+    .content-area {
+       @include content-area;
+
+        .journal-article {
+            font-family: $merri;
+            margin-bottom: 60px;
+
+            .header-article {
+                line-height: 0;
+                position: relative;
+
+                .img {
+                    height: auto;
+                    max-width: 100%;
+                }
+
+                h2 a {
+                    background-color: $color__link;
+                    color: #fff;
+                    font-size: 2.1rem;
+                    left: 0;
+                    font-family: $nov;
+                    text-decoration: none;
+                    line-height: 35px;
+                    padding: .75rem 1.5rem;
+                    position: absolute;
+                    margin-top: 2.25rem;
+                    max-width: 75%;
+                    top: 0;
+                }
+
+                .meta-div {
+                    background-color: $color__link;
+                    bottom: 0;
+                    color: #fff;
+                    display: inline-block;
+                    font-family: $nov;
+                    padding: 0.15rem 1.5rem;
+                    height: 33px;
+                    position: absolute;
+                    right: 0;
+                    text-transform: uppercase;
+                    overflow: hidden;
+                }
+            }
+
+        }
+
+        .link-read {
+            position: relative;
+            bottom: 12px;
+            left: 5px;
+            border: 1px solid #000;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: $nov;
+            margin-left: -5px;
+            margin-top: 30px;
+
+            &:hover {
+                background-color: $color__link-visited;
+                color: white;
+                border: none;
+            }
+        }
+    }
+
+    .site-content {
+        @include site-content;
+    }
+
+    .widget-area {
+        @include widget;
+    }
+}
+
+
+.tag,
+.date,
+.category,
+.date {
+    .entry-title {
+        display: none;
+    }
+
+    .content-area {
+        @include content-area;
+
+        h1 {
+            font-family: $nov;
+        }
+
+        .journal-article {
+            font-family: $merri;
+            margin-bottom: 60px;
+
+            .header-article {
+                line-height: 0;
+                position: relative;
+
+                .img {
+                    height: auto;
+                    max-width: 100%;
+                }
+
+                h2 a {
+                    background-color: $color__link;
+                    color: #fff;
+                    font-size: 2.1rem;
+                    left: 0;
+                    font-family: $nov;
+                    text-decoration: none;
+                    line-height: 35px;
+                    padding: .75rem 1.5rem;
+                    position: absolute;
+                    margin-top: 2.25rem;
+                    max-width: 75%;
+                    top: 0;
+                }
+
+                .meta-div {
+                    background-color: $color__link;
+                    bottom: 0;
+                    color: #fff;
+                    display: inline-block;
+                    font-family: $nov;
+                    padding: 0.15rem 1.5rem;
+                    height: 33px;
+                    position: absolute;
+                    right: 0;
+                    text-transform: uppercase;
+                    overflow: hidden;
+                }
+            }
+
+        }
+
+        .link-read {
+            @include link-read;
+        }
+    }
+
+    .site-content {
+        @include site-content;
+    }
+
+    .widget-area {
+        @include widget;
+    }
+}

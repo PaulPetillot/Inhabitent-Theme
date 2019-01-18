@@ -6,11 +6,11 @@
 
 button,
 input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type="reset"] {
 	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
+	font-family : $nov;
 	background: #e6e6e6;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
 	color: rgba(0, 0, 0, .8);
@@ -39,6 +39,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
+	font-family : $nov;
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -53,6 +54,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
+	font-family : $nov;
 	padding: 3px;
 	color: #666;
     background-color: #f4f4f4;

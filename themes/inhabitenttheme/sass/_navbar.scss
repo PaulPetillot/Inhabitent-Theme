@@ -1,0 +1,180 @@
+//Nav Bar
+main {
+    width: 100%;
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, .85);
+    border-bottom: 1px solid #e1e1e1;
+    padding: .5rem 0;
+    position: fixed;
+    transition: top .5s linear;
+    z-index: 3;
+
+    a {
+        color: $color__link;
+        font-family: $nov;
+        margin-right: 5px;
+    }
+
+    a:hover {
+        color: $color__link-hover;
+    }
+
+    h1 {
+        margin: 0;
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+        width: 50px;
+        height: 33px;
+    }
+
+    .logo {
+        background-image: url("../../images/logos/inhabitent-logo-tent.svg");
+        width: 50px;
+        height: 33px;
+        background-size: 50px 33px;
+        margin-left: 70px;
+
+        a {
+            color: transparent;
+            text-decoration: none;
+        }
+    }
+
+    .search-label {
+        display: inline-flex;
+        align-items: center;
+
+        .fa-search {
+            color: #248a83;
+        }
+    }
+
+    .search-menu {
+        height: 30px;
+        margin-top: -20px;
+
+        .search-label {
+            display: inline-flex;
+            align-items: center;
+
+            .fa-search {
+                color: #248a83;
+            }
+        }
+
+        fieldset {
+            height: 33px;
+            border: none;
+
+            input[type='search'] {
+                width: 0;
+                font-family: $nov;
+                background-color: transparent;
+                border: none;
+                transition: width 0.4s ease-in-out;
+                outline: none;
+                color: black;
+
+                &::placeholder {
+                    color: grey;
+                }
+
+                &:focus {
+                    width: 160px;
+                }
+            }
+        }
+    }
+}
+
+//Nav-bar for the homepage and About page
+.site-header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    padding: .5rem 0;
+    transition: top .5s linear;
+    z-index: 3;
+    position: absolute;
+
+    .menu-item {
+        a {
+            color: white;
+            font-family: $nov;
+            margin-right: 5px;
+        }
+    }
+
+    a:hover {
+        color: #f0e4d1;
+    }
+
+    .logo {
+        background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
+        width: 50px;
+        height: 33px;
+        background-size: 50px 33px;
+        margin-left: 70px;
+        overflow: hidden;
+        position: relative;
+
+        a {
+            color: transparent;
+            text-decoration: none;
+        }
+    }
+
+
+    .search-menu {
+        height: 30px;
+        margin-top: -20px;
+
+        .search-label {
+            display: inline-flex;
+            align-items: center;
+
+            .fa-search {
+                color: white;
+            }
+        }
+
+        fieldset {
+            height: 33px;
+            border: none;
+
+            input[type='search'] {
+                width: 0;
+                font-family: $nov;
+                background-color: transparent;
+                border: none;
+                transition: width 0.4s ease-in-out;
+                outline: none;
+                color: white;
+
+                &::placeholder {
+                    color: #f0e4d1;
+                }
+
+                &:focus {
+                    width: 160px;
+                }
+            }
+        }
+    }
+}
+
+//End of the alternative navbar
+.main-navigation {
+    margin-right: 70px;
+}

@@ -18,3 +18,102 @@
         position: relative;
         z-index: 1;
 }
+@mixin widget {
+        padding-left: 5%;
+            width: 27%;
+            display: block;
+            margin-top: 80px;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                font-family: $merri;
+            }
+
+            a {
+                text-decoration: none;
+
+                #phone-number::before {
+                    content: "\f095";
+                    color: black;
+                    font-family: "FontAwesome";
+                    margin-right: 10px;
+                }
+
+                #mail::before {
+                    content: "\f0e0";
+                    color: black;
+                    font-family: "FontAwesome";
+                    margin-right: 10px;
+                }
+
+                #adress {
+                    color: black;
+                }
+
+                #adress::before {
+                    content: "\f041";
+                    color: black;
+                    font-family: "FontAwesome";
+                    margin-right: 10px;
+                }
+            }
+
+            li {
+                list-style: none;
+                margin: 20px;
+                margin-left: 0px;
+            }
+}
+@mixin content-area {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 3%;
+    width: 73%;
+    position: relative;
+    margin-top: 60px;
+}
+@mixin site-content{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    position: relative;
+    z-index: 1;
+}
+@mixin link-read {
+            position: relative;
+            bottom: 12px;
+            left: 5px;
+            border: 1px solid #000;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: $nov;
+            margin-left: -5px;
+            margin-top: 30px;
+
+            &:hover {
+                background-color: $color__link-visited;
+                color: white;
+                border: none;
+            }
+}
+@mixin  adventures-link {
+    position: relative;
+    bottom: 12px;
+    left: 5px;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: $nov;
+    margin-left: -5px;
+
+    &:hover {
+        background-color: $color__link-visited;
+        color: white;
+        border: none;
+    }
+}

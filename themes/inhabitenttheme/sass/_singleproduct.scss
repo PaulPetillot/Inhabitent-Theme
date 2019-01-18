@@ -1,0 +1,91 @@
+
+//Single product part
+.single-product {
+    width: 100vw;
+
+    .nav-links {
+        display: none;
+    }
+
+    .entire-product {
+        margin-top: 80px;
+        display: inline-flex;
+        flex-direction: row;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        .entry-header {
+            padding: 50px;
+            width: 48%;
+
+            .image-wrapper-product {
+                img {
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .content-product-wrapper {
+            h1 {
+                color: #d99054;
+                margin-bottom: -25px;
+            }
+
+            padding: 50px;
+            width: 52%;
+            font-family: $merri;
+
+            .price-product {
+                p {
+                    font-family: $nov;
+                    font-size: 25px;
+                    margin-bottom: -10px;
+                }
+            }
+        }
+
+        .social-media-ul {
+            list-style: none;
+            display: inline-flex;
+
+            .social-media-li {
+                font-family: $nov;
+                font-size: 14px;
+                text-align: center;
+                padding: 8px 20px;
+                width: auto;
+                border: 1px solid black;
+                color: black;
+                list-style: none;
+                margin-left: 10px;
+
+                &:hover {
+                    background-color: #248a83;
+                    color: white;
+                    border: transparent;
+                }
+            }
+
+            .fb::before {
+                content: "\f09a";
+                font-family: "FontAwesome";
+                margin-right: 10px;
+            }
+
+            .twi::before {
+                content: "\f099";
+                font-family: "FontAwesome";
+                margin-right: 10px;
+            }
+
+            .pin::before {
+                content: "\f0d2";
+                font-family: "FontAwesome";
+                margin-right: 10px;
+            }
+        }
+    }
+}
